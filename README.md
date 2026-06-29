@@ -2,8 +2,12 @@
 
 An animated map of a century of New York City movie theaters — every house that
 opened and closed from 1900 to today. Each theater is a light sized by its seat count.
-Press play and the city's movie seats rise to a peak in the late 1930s of roughly 675,000
-and fall to about 106,000 now; closed theaters stay marked on the map where they once stood.
+Press play and the city's movie seats rise to a peak in the late 1930s of roughly 661,000
+and fall to about 47,000 now, across the 62 venues that still screen films to the public;
+closed theaters stay marked on the map where they once stood. A venue counts as still lit
+only if it actually shows movies today — restored palaces now used for concerts (Radio City,
+the Beacon, the Kings) or Broadway are dated to when they stopped showing films, not treated
+as active cinemas.
 
 - **Left rail** — theaters currently showing, in order of opening.
 - **Right rail** — theaters gone dark, in the year their lights went out.

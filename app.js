@@ -97,9 +97,9 @@
     for (var e = 0; e < embers.length; e++) {
       var em = embers[e], er = Math.max(2.4, em.r * 0.44);
       var eg = ctx.createRadialGradient(em.x, em.y, 0, em.x, em.y, er * 2.6);
-      eg.addColorStop(0, "rgba(196,132,78,0.62)");
-      eg.addColorStop(0.5, "rgba(150,100,60,0.26)");
-      eg.addColorStop(1, "rgba(120,80,45,0)");
+      eg.addColorStop(0, "rgba(168,82,22,0.7)");
+      eg.addColorStop(0.5, "rgba(120,55,14,0.3)");
+      eg.addColorStop(1, "rgba(80,38,10,0)");
       ctx.fillStyle = eg; ctx.beginPath(); ctx.arc(em.x, em.y, er * 2.6, 0, 6.2832); ctx.fill();
     }
     // living lights bloom additively

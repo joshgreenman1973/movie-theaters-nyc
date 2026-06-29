@@ -33,6 +33,35 @@ MANUAL_OVERRIDES = {
     # Elgin Theater (Chelsea) — showed films 1942-1978; became the Joyce Theater (dance) 1982.
     "6353": {"opened": 1942, "closed": 1978, "open_now": False, "confidence": "high",
              "name": "Elgin Theater (now the Joyce)"},
+    # Grand palaces that Cinema Treasures marks "open" because the building was restored as a
+    # CONCERT/EVENT venue, not a movie theater. Dated to when they stopped showing films.
+    "55":   {"closed": 1979, "open_now": False, "confidence": "high"},   # Radio City Music Hall
+    "618":  {"closed": 1962, "open_now": False, "confidence": "high"},   # Brooklyn Paramount
+    "1360": {"closed": 1977, "open_now": False, "confidence": "high"},   # Loew's Kings
+    "44":   {"closed": 1969, "open_now": False, "confidence": "high"},   # United Palace (Loew's 175th)
+    "42":   {"closed": 1974, "open_now": False, "confidence": "high"},   # Beacon Theatre
+    "1865": {"closed": 1977, "open_now": False, "confidence": "high"},   # St. George Theatre
+    "1864": {"closed": 1978, "open_now": False, "confidence": "high"},   # Paramount (Staten Island)
+}
+
+# A venue that Cinema Treasures lists as "open" is only an ACTIVE movie theater here if it
+# actually screens films to the public today. Real current cinemas are recognized by name
+# (chains + named art houses) or by an explicit keep-list of public film venues. Everything
+# else CT marks open (Broadway houses, concert palaces, churches, arts centers) is treated as
+# no longer a movie theater.
+CURRENT_CINEMA_NAME = re.compile(
+    r"\b(AMC|Regal|Cinepolis|Cin[eé]polis|Alamo|Angelika|IFC|Metrograph|Nitehawk|Nighthawk|"
+    r"Film Forum|Anthology|Village East|Cinema|Cinemas|Maysles|Moving Image|Cobble Hill|"
+    r"Kew Gardens|Drafthouse|Showcase|Multiplex|Movieplex|Syndicated|Stuart|Rooftop|"
+    r"Paris Theater|BAM Rose|Look Cinemas|Roxy Cinema)\b", re.I)
+# Public film venues whose names don't match the pattern above (kept lit).
+CINEMA_KEEP_IDS = {
+    "36174",  # Film at Lincoln Center
+    "7846",   # Walter Reade Theater
+    "36271",  # Spectacle Theater
+    "4030",   # Fair Theatre
+    "68759",  # Japan Society (public film series)
+    "285",    # Symphony Space / Leonard Nimoy Thalia (public film programming)
 }
 
 
@@ -72,7 +101,8 @@ def main():
 
     theaters = []
     stats = {"total": 0, "with_open": 0, "with_close": 0, "undated": 0,
-             "timeline": 0, "enriched_used": 0, "still_open": 0, "predates_movie_era": 0}
+             "timeline": 0, "enriched_used": 0, "still_open": 0, "predates_movie_era": 0,
+             "reclassified_not_cinema": 0}
 
     for r in raw:
         tid = r["cinema_treasures_id"].strip()
@@ -123,6 +153,14 @@ def main():
         is_open = status in OPEN_STATUSES
         if ov and "open_now" in ov:
             is_open = ov["open_now"]
+
+        # The building may be alive without being a public movie theater. Only count it as
+        # currently open if it actually screens films to the public today.
+        name = override_name or r["name"].strip()
+        reclassified = False
+        if is_open and not (CURRENT_CINEMA_NAME.search(name) or tid in CINEMA_KEEP_IDS):
+            is_open = False
+            reclassified = True
         if is_open:
             closed = None
         # The light goes out when the theater CLOSES (stops showing movies), not when
@@ -152,7 +190,7 @@ def main():
 
         rec = {
             "id": tid,
-            "name": override_name or r["name"].strip(),
+            "name": name,
             "borough": r["borough"].strip(),
             "lat": round(float(lat), 6),
             "lng": round(float(lng), 6),
@@ -184,6 +222,8 @@ def main():
             stats["still_open"] += 1
         if predates_movie_era and timeline:
             stats["predates_movie_era"] += 1
+        if reclassified:
+            stats["reclassified_not_cinema"] += 1
 
     out = {
         "generated_provisional": not have_enrich,

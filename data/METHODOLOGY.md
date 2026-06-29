@@ -125,16 +125,33 @@ were corrected by hand from secondary sources and are listed in `MANUAL_OVERRIDE
   (a dance venue) in 1982. Cinema Treasures filed it under "Joyce Theater" and marked it
   open; it is relabeled here and dated to its movie-house life, 1942-1978. (Wikipedia.)
 
+## Active vs. repurposed (what counts as "still lit")
+Cinema Treasures marks a venue "Open" when the building is in use — which includes grand
+movie palaces that were restored as concert halls (Radio City, the Beacon, Loew's Kings,
+United Palace, the Brooklyn Paramount, the St. George), former movie houses now running as
+Broadway or Off-Broadway theaters (the Winter Garden, Palace, New Amsterdam and a dozen
+others), churches, and arts centers (BRIC, Coney Island USA). None of these screen films to
+the public today. So a venue is treated as a currently-active movie theater only if it
+actually shows movies now — recognized by name (chains and named art houses) or an explicit
+keep-list of public film venues (e.g. Film at Lincoln Center, Walter Reade, Spectacle, Japan
+Society, Symphony Space's Thalia). 48 "open" venues were reclassified:
+- Prominent palaces are dated to the year they stopped showing films (Radio City 1979,
+  Brooklyn Paramount 1962, Loew's Kings 1977, United Palace 1969, Beacon 1974, St. George
+  1977, Staten Island Paramount 1978) and go dark on the map at that year.
+- Others that lack a known film-closing year are moved to "undated" rather than assigned a
+  guessed date, so they leave the animation rather than sit falsely lit.
+This is a judgment line; the keep-list and overrides live in `build_data.py` and can be
+adjusted. The count of currently-active cinemas (62) is deliberately conservative.
+
 ## Final dataset summary (as built)
 - 1,210 theaters placed on the map (of 1,235 pulled; 25 lacked coordinates).
 - 1,036 have an opening year (86%); 891 have a closing year.
-- 899 are on the animated timeline; 311 are undated and omitted from it. Of the 899,
-  57 predate the movie era and are floored to 1905 (see above).
-- About 122 venues are currently open as movie theaters; 112 of those are on the
-  timeline and lit at 2026.
-- Shape of the story: the count and seat totals peak in the late 1930s — about 525
-  theaters and roughly 675,000 seats in 1938-1939 — then decline to 112 theaters and
-  106,301 seats today: an 84% loss of movie seats, with 785 theaters gone dark.
+- 878 are on the animated timeline; 332 are undated and omitted from it. Of the 878,
+  ~50 predate the movie era and are floored to 1905 (see above).
+- 62 venues still screen films to the public and are lit at 2026.
+- Shape of the story: the seat total peaks in the late 1930s — about 508 theaters and
+  roughly 661,000 seats in 1938 — then declines to 62 active cinemas and 47,191 seats
+  today: a 93% loss of movie seats, with 816 theaters gone dark.
 - These figures track real history: U.S. movie attendance peaked in the late 1940s and
   fell sharply with suburbanization and television through the 1950s-1960s.
 
