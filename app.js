@@ -19,8 +19,7 @@
     var theaters = payload.theaters || [];
     TT = theaters.filter(function (t) { return t.timeline; });
 
-    var minOpen = TT.reduce(function (m, t) { return Math.min(m, t.opened); }, 9999);
-    MIN_YEAR = Math.min(1900, Math.floor(minOpen / 10) * 10);
+    MIN_YEAR = TT.reduce(function (m, t) { return Math.min(m, t.opened); }, 9999);
     year = MIN_YEAR;
     var scrub = el("scrub");
     scrub.min = MIN_YEAR; scrub.max = MAX_YEAR; scrub.value = MIN_YEAR;
@@ -67,8 +66,7 @@
 
   function radiusFor(t, zoom) {
     var norm, val;
-    if (metric === "count") { norm = 0.5; }
-    else if (metric === "screens") { val = t.screens || 1; norm = Math.sqrt(val / 20); }
+    if (metric === "screens") { val = t.screens || 1; norm = Math.sqrt(val / 20); }
     else { val = t.seats || 300; norm = Math.sqrt(val / 6000); }
     if (norm > 1.25) norm = 1.25;
     var base = 3 + norm * 15;
@@ -176,7 +174,6 @@
   }
 
   function metricVal(t) {
-    if (metric === "count") return 1;
     if (metric === "screens") return t.screens || 0;
     return t.seats || 0;
   }
@@ -191,7 +188,7 @@
       metric = b.getAttribute("data-m");
       Array.prototype.forEach.call(this.querySelectorAll("button"), function (x) { x.classList.remove("on"); });
       b.classList.add("on");
-      el("metricLbl").textContent = metric === "count" ? "theaters lit" : metric === "screens" ? "screens lit" : "seats lit";
+      el("metricLbl").textContent = metric === "screens" ? "screens lit" : "seats lit";
       render(year);
     });
     el("aiBtn").addEventListener("click", function () { el("aiPop").classList.toggle("open"); });
@@ -266,6 +263,10 @@
     var life = t.opened + (t.gone ? " &ndash; " + t.gone : t.open_now ? " &ndash; still open" : " &ndash; ?");
     var bits = [];
     bits.push(boroughName(t.borough) + " &middot; " + life);
+    if (t.predates_movie_era && t.building_opened) {
+      bits.push("<span style='color:#7d6a52'>Building opened " + t.building_opened +
+        ", before the movie-theater era; shown from " + t.opened + ".</span>");
+    }
     var sc = [];
     if (t.seats) sc.push(fmt(t.seats) + " seats");
     if (t.screens) sc.push(t.screens + (t.screens === 1 ? " screen" : " screens"));

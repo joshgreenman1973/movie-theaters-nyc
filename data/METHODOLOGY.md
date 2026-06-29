@@ -101,16 +101,28 @@ confidence. Where no year is stated, the field is left blank — not invented.
 - The light goes out in the year the theater CLOSED. Demolition year is used only as
   a fallback when the closing year is unknown.
 - Impossible orderings (gone-before-opened) are dropped and flagged low confidence.
+- **Movie-era floor (1905).** Cinema Treasures records a venue's BUILDING opening year.
+  Dedicated movie theaters did not exist in New York City before about 1905; the first
+  projected film here was 1896 (Koster & Bial's Music Hall), shown within vaudeville
+  programs, not in a movie theater. So the effective movie-theater opening used by the
+  timeline is floored at 1905: 57 venues that opened earlier (as vaudeville or
+  legitimate theaters) are shown entering at 1905, and their true building-opening year
+  is kept in the `building_opened` field and surfaced in each detail card. Any venue
+  that had already closed before 1905 never operated as a movie theater and is dropped
+  from the timeline. This means the years 1905-1910 carry a cohort of older venues whose
+  exact film-conversion year is not recorded — read that early stretch with that caveat.
 
 ## Final dataset summary (as built)
 - 1,210 theaters placed on the map (of 1,235 pulled; 25 lacked coordinates).
 - 1,036 have an opening year (86%); 891 have a closing year.
-- 898 are on the animated timeline; 312 are undated and omitted from it.
-- 124 are currently open (any status); 112 of those have a known opening year and
-  appear lit at 2026.
-- Shape of the story: the count and seat totals peak around 1940 (≈523 theaters,
-  ≈665,000 seats), then decline to ≈112 theaters and ≈106,000 seats today — roughly
-  an 84% loss of movie seats, with ≈786 theaters gone dark.
+- 897 are on the animated timeline; 313 are undated and omitted from it. Of the 897,
+  57 predate the movie era and are floored to 1905 (see above).
+- 124 are currently open (any status); 112 of those are on the timeline and lit at 2026.
+- Shape of the story: the count and seat totals peak in the late 1930s — about 525
+  theaters and roughly 675,000 seats in 1938-1939 — then decline to 112 theaters and
+  106,301 seats today: an 84% loss of movie seats, with 785 theaters gone dark.
+- These figures track real history: U.S. movie attendance peaked in the late 1940s and
+  fell sharply with suburbanization and television through the 1950s-1960s.
 
 These aggregate figures are only as reliable as a crowdsourced source allows; treat
 them as well-sourced estimates, not an official census. Individual year confidence is

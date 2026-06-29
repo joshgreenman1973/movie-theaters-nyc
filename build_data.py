@@ -13,6 +13,13 @@ DATA = os.path.join(ROOT, "data")
 
 YEAR_MIN, YEAR_MAX = 1880, 2026
 OPEN_STATUSES = {"Open", "Renovating", "Restoring"}
+# Dedicated movie theaters (nickelodeons) did not exist in NYC before ~1905; the first
+# projected film here was 1896 (Koster & Bial's Music Hall), shown within vaudeville
+# programs, not in movie theaters. Cinema Treasures records a venue's BUILDING opening
+# year, which for older houses long predates any film use. So for the movie-theater
+# timeline we floor the effective opening at the movie era and keep the building year
+# separately. See METHODOLOGY.md.
+MOVIE_ERA = 1905
 
 
 def to_year(v):
@@ -51,7 +58,7 @@ def main():
 
     theaters = []
     stats = {"total": 0, "with_open": 0, "with_close": 0, "undated": 0,
-             "timeline": 0, "enriched_used": 0, "still_open": 0}
+             "timeline": 0, "enriched_used": 0, "still_open": 0, "predates_movie_era": 0}
 
     for r in raw:
         tid = r["cinema_treasures_id"].strip()
@@ -98,9 +105,20 @@ def main():
         if opened and gone and gone < opened:
             gone = None
             confidence = "low"
-        # A theater belongs on the animated timeline only if we know when it appeared
-        # and (if it's gone) when it went dark. Otherwise it would sit falsely lit.
-        timeline = (opened is not None) and (is_open or gone is not None)
+
+        # Effective movie-theater opening: never earlier than the movie era. Keep the
+        # building's true opening year separately for the detail card.
+        building_opened = opened
+        predates_movie_era = opened is not None and opened < MOVIE_ERA
+        eff_opened = max(opened, MOVIE_ERA) if opened is not None else None
+
+        # A theater is on the animated timeline only if we know when it opened (as a movie
+        # house) and (if gone) when it went dark. A venue that closed before the movie era
+        # never operated as a movie theater, so it is excluded.
+        if eff_opened is not None and gone is not None and gone < eff_opened:
+            timeline = False
+        else:
+            timeline = (eff_opened is not None) and (is_open or gone is not None)
 
         rec = {
             "id": tid,
@@ -111,7 +129,9 @@ def main():
             "seats": seats,
             "screens": screens,
             "status": status,
-            "opened": opened,
+            "opened": eff_opened,    # effective movie-theater opening (floored at movie era)
+            "building_opened": building_opened,  # true building opening per Cinema Treasures
+            "predates_movie_era": predates_movie_era,
             "gone": gone,            # year the lights went out (closed), or None if still open
             "open_now": is_open,
             "timeline": timeline,
@@ -132,6 +152,8 @@ def main():
             stats["undated"] += 1
         if rec["open_now"]:
             stats["still_open"] += 1
+        if predates_movie_era and timeline:
+            stats["predates_movie_era"] += 1
 
     out = {
         "generated_provisional": not have_enrich,

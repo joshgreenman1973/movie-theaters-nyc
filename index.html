@@ -6,15 +6,15 @@
 <title>When the lights went out — a century of New York City movie theaters</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="styles.css?v=2" />
+<link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <div>
-      <div class="kicker">New York City &middot; movie theaters &middot; 1900&ndash;2026</div>
+      <div class="kicker">New York City &middot; movie theaters &middot; 1905&ndash;2026</div>
       <h1 class="title">When the lights went out</h1>
-      <div class="sub">Every New York City movie theater in the Cinema Treasures record, mapped from 1900 to today. Press play to watch theaters open and close across the century. Closed theaters stay marked where they once stood.</div>
+      <div class="sub">Every New York City movie theater in the Cinema Treasures record, mapped from 1905 to today. Press play to watch theaters open and close across the century. Closed theaters stay marked where they once stood.</div>
     </div>
     <div class="ai-pop" id="aiPop">
       <button class="ai-btn" id="aiBtn">AI caution &amp; sourcing</button>
@@ -23,6 +23,7 @@
         <ul>
           <li>Theaters, locations, seat counts and statuses come from <a href="https://cinematreasures.org" target="_blank" rel="noopener">Cinema Treasures</a>, a crowdsourced, user-edited database. Some entries are incomplete or wrong.</li>
           <li>Opening and closing <b>years were extracted by AI</b> from each theater's written description, with a confidence rating. Many are approximate; some are unknown and those theaters are left off the timeline (counted under &ldquo;undated&rdquo;).</li>
+          <li>Cinema Treasures records a venue's <b>building</b> opening year. Dedicated movie theaters did not exist in New York before about 1905 (the first projected film here was 1896, shown within vaudeville bills). Older venues that opened as vaudeville or legitimate theaters are therefore shown entering at 1905; their true building-opening year is in each detail card.</li>
           <li>Seat counts are user-entered and unverified, though the famous houses check out.</li>
           <li>This is not a complete census of every theater that ever existed in the city &mdash; only what the source records.</li>
           <li>See the <a href="data/METHODOLOGY.md" target="_blank">methodology</a> for full detail.</li>
@@ -47,7 +48,7 @@
           <div class="ff-burn"></div>
           <div class="ff-flash"></div>
         </div>
-        <div class="overlay-yr" id="yrOut">1900</div>
+        <div class="overlay-yr" id="yrOut">1905</div>
         <div class="overlay-metric"><div class="big" id="metricOut">0</div><div class="lbl" id="metricLbl">seats lit</div></div>
         <div class="tooltip" id="tip"></div>
         <div class="detail" id="detail">
@@ -58,11 +59,10 @@
       </div>
       <div class="controls">
         <button class="playbtn" id="play" aria-label="Play">&#9654;</button>
-        <input type="range" id="scrub" min="1900" max="2026" value="1900" step="1" />
+        <input type="range" id="scrub" min="1905" max="2026" value="1905" step="1" />
         <div class="seg" id="metricSeg">
           <button data-m="seats" class="on">Seats</button>
           <button data-m="screens">Screens</button>
-          <button data-m="count">Count</button>
         </div>
         <div class="speed">
           <label for="speed">Speed</label>
@@ -84,6 +84,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
