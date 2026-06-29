@@ -21,6 +21,20 @@ OPEN_STATUSES = {"Open", "Renovating", "Restoring"}
 # separately. See METHODOLOGY.md.
 MOVIE_ERA = 1905
 
+# Named repertory/arthouse houses that the crowdsourced source left undated or recorded
+# only under their later non-cinema identity. Years here are recovered from secondary
+# sources (Wikipedia, Village Preservation) and cited in METHODOLOGY.md. Keyed by
+# Cinema Treasures id. open_now=False forces them off the "still open" set.
+MANUAL_OVERRIDES = {
+    # Bleecker Street Cinema — founded by Lionel Rogosin 1960; closed Sept 6, 1990.
+    "6016": {"opened": 1960, "closed": 1990, "open_now": False, "confidence": "high"},
+    # Theatre 80 St. Marks — revival film house from Aug 1971 into the mid-1990s.
+    "4698": {"opened": 1971, "closed": 1994, "open_now": False, "confidence": "medium"},
+    # Elgin Theater (Chelsea) — showed films 1942-1978; became the Joyce Theater (dance) 1982.
+    "6353": {"opened": 1942, "closed": 1978, "open_now": False, "confidence": "high",
+             "name": "Elgin Theater (now the Joyce)"},
+}
+
 
 def to_year(v):
     """Parse a 4-digit year. Tolerates decade strings ('1950s', 'early 1960s')
@@ -91,8 +105,24 @@ def main():
             opened = to_year(r["year_opened_guess"])
             closed = to_year(r["year_closed_guess"])
 
+        # Sourced manual overrides for named houses the source mis-recorded.
+        ov = MANUAL_OVERRIDES.get(tid)
+        override_name = None
+        if ov:
+            if "opened" in ov:
+                opened = ov["opened"]
+            if "closed" in ov:
+                closed = ov["closed"]
+            if "demolished" in ov:
+                demolished = ov["demolished"]
+            confidence = ov.get("confidence", confidence)
+            override_name = ov.get("name")
+            provisional = False
+
         # Coherence: open theaters have no death year.
         is_open = status in OPEN_STATUSES
+        if ov and "open_now" in ov:
+            is_open = ov["open_now"]
         if is_open:
             closed = None
         # The light goes out when the theater CLOSES (stops showing movies), not when
@@ -122,7 +152,7 @@ def main():
 
         rec = {
             "id": tid,
-            "name": r["name"].strip(),
+            "name": override_name or r["name"].strip(),
             "borough": r["borough"].strip(),
             "lat": round(float(lat), 6),
             "lng": round(float(lng), 6),

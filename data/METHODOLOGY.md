@@ -112,12 +112,26 @@ confidence. Where no year is stated, the field is left blank — not invented.
   from the timeline. This means the years 1905-1910 carry a cohort of older venues whose
   exact film-conversion year is not recorded — read that early stretch with that caveat.
 
+## Manual corrections (sourced)
+A few well-known repertory/arthouse houses were left undated by the crowdsourced source,
+or recorded only under a later non-cinema identity, so they fell off the timeline. These
+were corrected by hand from secondary sources and are listed in `MANUAL_OVERRIDES` in
+`build_data.py`:
+- **Bleecker Street Cinema** — opened 1960 (founded by Lionel Rogosin), closed Sept 6,
+  1990. (Wikipedia; Village Preservation.)
+- **Theatre 80 St. Marks** — revival film house from August 1971 into the mid-1990s
+  (closing year taken as 1994; medium confidence). (Wikipedia; Village Preservation.)
+- **Elgin Theater** (Chelsea) — showed films 1942-1978, then became the Joyce Theater
+  (a dance venue) in 1982. Cinema Treasures filed it under "Joyce Theater" and marked it
+  open; it is relabeled here and dated to its movie-house life, 1942-1978. (Wikipedia.)
+
 ## Final dataset summary (as built)
 - 1,210 theaters placed on the map (of 1,235 pulled; 25 lacked coordinates).
 - 1,036 have an opening year (86%); 891 have a closing year.
-- 897 are on the animated timeline; 313 are undated and omitted from it. Of the 897,
+- 899 are on the animated timeline; 311 are undated and omitted from it. Of the 899,
   57 predate the movie era and are floored to 1905 (see above).
-- 124 are currently open (any status); 112 of those are on the timeline and lit at 2026.
+- About 122 venues are currently open as movie theaters; 112 of those are on the
+  timeline and lit at 2026.
 - Shape of the story: the count and seat totals peak in the late 1930s — about 525
   theaters and roughly 675,000 seats in 1938-1939 — then decline to 112 theaters and
   106,301 seats today: an 84% loss of movie seats, with 785 theaters gone dark.
