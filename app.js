@@ -207,10 +207,18 @@
     }
   }
 
+  function filmBurst(ms) {
+    var f = el("filmfx"); if (!f) return;
+    f.classList.remove("on"); void f.offsetWidth; f.classList.add("on");
+    if (f._t) clearTimeout(f._t);
+    f._t = setTimeout(function () { f.classList.remove("on"); }, ms);
+  }
+
   function togglePlay() {
     if (playing) { stop(); return; }
-    if (year >= MAX_YEAR) { year = MIN_YEAR; }
+    if (year >= MAX_YEAR) { year = MIN_YEAR; render(MIN_YEAR); }
     playing = true; el("play").innerHTML = "&#10073;&#10073;";
+    filmBurst(1100);
     step();
   }
   function stop() {
@@ -219,8 +227,8 @@
   }
   function step() {
     if (!playing) return;
-    if (year >= MAX_YEAR) { stop(); return; }
     render(year + 1);
+    if (year >= MAX_YEAR) { stop(); filmBurst(1400); return; }
     var sp = parseInt(el("speed").value, 10);
     var ms = 280 - sp * 24;
     timer = setTimeout(step, ms);

@@ -1,10 +1,9 @@
 # When the lights went out
 
 An animated map of a century of New York City movie theaters — every house that
-opened, glowed and went dark from 1900 to today. Each theater is a light sized by its
-seat count; press play and watch the city's movie seats blaze to a ~1940 peak of
-roughly 665,000 and collapse to about 106,000 now, each closure leaving a faint ember
-where the theater once stood.
+opened and closed from 1900 to today. Each theater is a light sized by its seat count.
+Press play and the city's movie seats rise to a peak around 1940 of roughly 665,000 and
+fall to about 106,000 now; closed theaters stay marked on the map where they once stood.
 
 - **Left rail** — theaters currently showing, in order of opening.
 - **Right rail** — theaters gone dark, in the year their lights went out.
