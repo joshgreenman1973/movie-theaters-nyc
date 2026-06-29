@@ -6,7 +6,7 @@
 <title>When the lights went out — a century of New York City movie theaters</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="styles.css?v=5" />
+<link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
 <div class="wrap">
@@ -70,6 +70,10 @@
           <input type="range" id="speed" min="1" max="10" value="5" step="1" style="min-width:90px;flex:0 0 90px" />
         </div>
       </div>
+      <div class="trend">
+        <div class="trend-head"><span id="trendLabel">Seats showing</span><span id="trendPeak"></span></div>
+        <canvas id="trendCanvas"></canvas>
+      </div>
     </div>
 
     <aside class="rail dead">
@@ -85,6 +89,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="app.js?v=5"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>

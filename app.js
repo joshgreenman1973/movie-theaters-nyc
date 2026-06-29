@@ -9,6 +9,7 @@
   var TT = [];           // theaters on the timeline (have an opening year)
   var pts = [];          // drawn screen positions for hit-testing
   var map, glow, ctx, canvas, dpr = 1;
+  var trendCanvas, trendCtx, series = null, tdpr = 1;
 
   var el = function (id) { return document.getElementById(id); };
   var fmt = function (n) { return (n || 0).toLocaleString("en-US"); };
@@ -25,6 +26,7 @@
     scrub.min = MIN_YEAR; scrub.max = MAX_YEAR; scrub.value = MIN_YEAR;
 
     setupMap();
+    setupTrend();
     buildRails();
     wireControls(payload);
     render(MIN_YEAR);
@@ -115,6 +117,65 @@
     ctx.globalCompositeOperation = "source-over";
   }
 
+  function setupTrend() {
+    trendCanvas = el("trendCanvas");
+    trendCtx = trendCanvas.getContext("2d");
+    rebuildSeries();
+    sizeTrend();
+    window.addEventListener("resize", function () { sizeTrend(); drawChart(year); });
+  }
+
+  function rebuildSeries() {
+    var years = [], vals = [], max = 0;
+    for (var y = MIN_YEAR; y <= MAX_YEAR; y++) {
+      var s = 0;
+      for (var i = 0; i < TT.length; i++) {
+        var t = TT[i];
+        if (t.opened <= y && (t.gone == null || t.gone > y)) s += metricVal(t);
+      }
+      years.push(y); vals.push(s); if (s > max) max = s;
+    }
+    series = { years: years, vals: vals, max: max || 1 };
+    el("trendPeak").textContent = "peak " + fmt(max);
+    el("trendLabel").textContent = (metric === "screens" ? "Screens" : "Seats") + " showing";
+  }
+
+  function sizeTrend() {
+    tdpr = window.devicePixelRatio || 1;
+    var w = trendCanvas.clientWidth, h = trendCanvas.clientHeight;
+    trendCanvas.width = w * tdpr; trendCanvas.height = h * tdpr;
+    trendCtx.setTransform(tdpr, 0, 0, tdpr, 0, 0);
+  }
+
+  function drawChart(y) {
+    if (!series || !trendCtx) return;
+    var w = trendCanvas.width / tdpr, h = trendCanvas.height / tdpr;
+    trendCtx.clearRect(0, 0, w, h);
+    var padL = 6, padR = 8, padT = 8, padB = 15, plotW = w - padL - padR, plotH = h - padT - padB;
+    var n = series.years.length;
+    function X(i) { return padL + (i / (n - 1)) * plotW; }
+    function Y(v) { return padT + plotH - (v / series.max) * plotH; }
+    trendCtx.strokeStyle = "rgba(120,90,60,0.25)"; trendCtx.lineWidth = 1;
+    trendCtx.beginPath(); trendCtx.moveTo(padL, padT + plotH); trendCtx.lineTo(padL + plotW, padT + plotH); trendCtx.stroke();
+    var cur = Math.max(0, Math.min(n - 1, y - MIN_YEAR)), i, x, yv;
+    trendCtx.beginPath(); trendCtx.moveTo(X(0), padT + plotH);
+    for (i = 0; i <= cur; i++) trendCtx.lineTo(X(i), Y(series.vals[i]));
+    trendCtx.lineTo(X(cur), padT + plotH); trendCtx.closePath();
+    trendCtx.fillStyle = "rgba(255,150,40,0.10)"; trendCtx.fill();
+    trendCtx.beginPath();
+    for (i = 0; i <= cur; i++) { x = X(i); yv = Y(series.vals[i]); if (i === 0) trendCtx.moveTo(x, yv); else trendCtx.lineTo(x, yv); }
+    trendCtx.strokeStyle = "#ffb55a"; trendCtx.lineWidth = 2; trendCtx.lineJoin = "round"; trendCtx.lineCap = "round"; trendCtx.stroke();
+    trendCtx.beginPath(); trendCtx.arc(X(cur), Y(series.vals[cur]), 3, 0, 6.2832); trendCtx.fillStyle = "#fff1d4"; trendCtx.fill();
+    trendCtx.fillStyle = "rgba(160,140,110,0.5)"; trendCtx.font = "10px ui-monospace, Menlo, monospace";
+    [1905, 1940, 1980, 2026].forEach(function (yr) {
+      if (yr < MIN_YEAR || yr > MAX_YEAR) return;
+      var tx = X(yr - MIN_YEAR) - 11;
+      if (yr === MIN_YEAR || yr === 1905) tx = padL;
+      if (yr === 2026) tx = padL + plotW - 26;
+      trendCtx.fillText(yr, tx, h - 3);
+    });
+  }
+
   function buildRails() {
     var live = TT.slice().sort(function (a, b) { return a.opened - b.opened || a.name.localeCompare(b.name); });
     var dead = TT.filter(function (t) { return t.gone != null; })
@@ -168,6 +229,7 @@
     el("deadCount").textContent = fmt(deadCount);
     el("metricOut").textContent = fmt(sum);
     redraw();
+    drawChart(y);
     if (playing) {
       var ds = el("deadRail"); ds.scrollTop = ds.scrollHeight;
     }
@@ -189,6 +251,7 @@
       Array.prototype.forEach.call(this.querySelectorAll("button"), function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       el("metricLbl").textContent = metric === "screens" ? "screens lit" : "seats lit";
+      rebuildSeries();
       render(year);
     });
     el("aiBtn").addEventListener("click", function () { el("aiPop").classList.toggle("open"); });
