@@ -7,6 +7,7 @@
   var playing = false;
   var timer = null;
   var TT = [];           // theaters on the timeline (have an opening year)
+  var ALL = [];          // every placeable theater (for search)
   var pts = [];          // drawn screen positions for hit-testing
   var map, glow, ctx, canvas, dpr = 1;
   var trendCanvas, trendCtx, series = null, tdpr = 1;
@@ -18,6 +19,7 @@
 
   function init(payload) {
     var theaters = payload.theaters || [];
+    ALL = theaters;
     TT = theaters.filter(function (t) { return t.timeline; });
 
     MIN_YEAR = TT.reduce(function (m, t) { return Math.min(m, t.opened); }, 9999);
@@ -29,6 +31,7 @@
     setupTrend();
     buildRails();
     wireControls(payload);
+    setupSearch();
     render(MIN_YEAR);
   }
 
@@ -295,13 +298,18 @@
   }
 
   function nearest(cp) {
-    var best = null, bd = 16 * 16;
+    // When several theaters share a spot (an active cinema in a former theater's
+    // building), prefer the living one the user is actually looking at.
+    var bestLive = null, bdLive = 1e9, bestDead = null, bdDead = 1e9;
     for (var i = 0; i < pts.length; i++) {
-      var d = (pts[i].x - cp.x) * (pts[i].x - cp.x) + (pts[i].y - cp.y) * (pts[i].y - cp.y);
-      var rr = Math.max(14, pts[i].r); rr = rr * rr;
-      if (d < rr && d < bd) { bd = d; best = pts[i]; }
+      var p = pts[i];
+      var d = (p.x - cp.x) * (p.x - cp.x) + (p.y - cp.y) * (p.y - cp.y);
+      var rr = Math.max(14, p.r); rr = rr * rr;
+      if (d >= rr) continue;
+      if (p.dead) { if (d < bdDead) { bdDead = d; bestDead = p; } }
+      else { if (d < bdLive) { bdLive = d; bestLive = p; } }
     }
-    return best;
+    return bestLive || bestDead;
   }
 
   function onHover(e) {
@@ -339,6 +347,59 @@
     bits.push('<a href="' + t.url + '" target="_blank" rel="noopener">Cinema Treasures &nearr;</a>');
     el("detailMeta").innerHTML = bits.join("<br>");
     el("detail").classList.add("open");
+  }
+
+  function setupSearch() {
+    var input = el("searchInput"), box = el("searchResults");
+    if (!input) return;
+    function show(hits) {
+      if (!hits.length) {
+        box.innerHTML = '<div class="sr-empty">No theater found</div>';
+        box.classList.add("open"); return;
+      }
+      box.innerHTML = "";
+      hits.forEach(function (t) {
+        var meta = t.open_now
+          ? '<span class="sr-meta sr-active">active</span>'
+          : t.gone ? '<span class="sr-meta sr-dead">closed ' + t.gone + "</span>"
+          : '<span class="sr-meta sr-dead">date unknown</span>';
+        var yrs = t.opened ? (t.opened + (t.gone ? "&ndash;" + t.gone : t.open_now ? "&ndash;now" : "")) : "";
+        var d = document.createElement("div");
+        d.className = "sr-item";
+        d.innerHTML = '<span class="sr-name">' + escapeHtml(t.name) +
+          (yrs ? ' <span style="color:#6f5e48">' + yrs + "</span>" : "") + "</span>" + meta;
+        d.addEventListener("mousedown", function (e) { e.preventDefault(); pickSearch(t); });
+        box.appendChild(d);
+      });
+      box.classList.add("open");
+    }
+    input.addEventListener("input", function () {
+      var q = this.value.trim().toLowerCase();
+      if (q.length < 2) { box.classList.remove("open"); box.innerHTML = ""; return; }
+      var terms = q.split(/\s+/);
+      var hits = ALL.filter(function (t) {
+        var n = t.name.toLowerCase();
+        return terms.every(function (w) { return n.indexOf(w) >= 0; });
+      });
+      hits.sort(function (a, b) {
+        var aa = a.open_now ? 0 : 1, bb = b.open_now ? 0 : 1;
+        if (aa !== bb) return aa - bb;
+        return a.name.localeCompare(b.name);
+      });
+      show(hits.slice(0, 10));
+    });
+    input.addEventListener("focus", function () { if (box.innerHTML) box.classList.add("open"); });
+    input.addEventListener("blur", function () { setTimeout(function () { box.classList.remove("open"); }, 150); });
+  }
+
+  function pickSearch(t) {
+    el("searchResults").classList.remove("open");
+    el("searchInput").value = t.name;
+    if (t.timeline && t.opened != null) {
+      var y = t.open_now ? MAX_YEAR : t.opened;
+      stop(); year = y; el("scrub").value = y; render(y);
+    }
+    flyTo(t);
   }
 
   function flyTo(t) {

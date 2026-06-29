@@ -6,7 +6,7 @@
 <title>When the lights went out — a century of New York City movie theaters</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="styles.css?v=6" />
+<link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
 <div class="wrap">
@@ -16,6 +16,11 @@
       <h1 class="title">When the lights went out</h1>
       <div class="sub">Every New York City movie theater in the Cinema Treasures record, mapped from 1905 to today. Press play to watch theaters open and close across the century. Closed theaters stay marked where they once stood.</div>
     </div>
+    <div class="topright">
+      <div class="search" id="searchWrap">
+        <input id="searchInput" type="text" placeholder="Search a theater&hellip;" autocomplete="off" aria-label="Search theaters" />
+        <div class="search-results" id="searchResults"></div>
+      </div>
     <div class="ai-pop" id="aiPop">
       <button class="ai-btn" id="aiBtn">AI caution &amp; sourcing</button>
       <div class="ai-card">
@@ -30,6 +35,7 @@
           <li>See the <a href="data/METHODOLOGY.md" target="_blank">methodology</a> for full detail.</li>
         </ul>
       </div>
+    </div>
     </div>
   </header>
 
@@ -89,6 +95,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>
