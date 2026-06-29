@@ -1,0 +1,124 @@
+# Cinema Treasures NYC theater dataset — methodology
+
+## Source
+All data extracted from Cinema Treasures (cinematreasures.org), a crowdsourced,
+user-edited database of historic and current movie theaters. Each theater has a
+stable numeric ID and detail page at `https://cinematreasures.org/theaters/{id}`,
+captured per-row in `cinema_treasures_id` / `cinema_treasures_url`.
+
+Extraction date: 2026-06-26.
+
+## How theaters were enumerated
+Cinema Treasures organizes theaters by country -> state -> city. NYC boroughs map
+to "cities" as follows:
+
+- Manhattan -> city slug `new-york`
+- Brooklyn -> `brooklyn`
+- Bronx -> `bronx`
+- Staten Island -> `staten-island`
+- Queens -> NOT a single slug. The bare `queens` slug redirects away. Queens
+  theaters are filed under ~40 neighborhood "cities" (Astoria, Flushing, Jamaica,
+  Long Island City, Ridgewood, etc.). We enumerated each neighborhood slug
+  individually. Ambiguous slugs that also exist outside Queens (Ridgewood,
+  Glendale, Sunnyside, Floral Park, Bellerose) were resolved by reading the
+  actual city + state on each detail page (see Borough assignment).
+
+For each city listing we requested `?status=all`, which returns theaters of every
+status (Open, Showing Movies, Closed, Demolished, Renovating, Restoring), paging
+through 30 results per page. We captured each theater's numeric ID from the listing
+links, then fetched every detail page.
+
+Listing totals reported by the site at extraction time:
+Manhattan 498, Brooklyn 405, Bronx 125, Staten Island 42, Queens ~165 (summed
+across neighborhoods).
+
+## Fields and how each was extracted (per detail page)
+- **name** — page `<h1>`.
+- **street_address / city / state / zip** — hCard microformat classes on the page
+  (`street-address`, `locality`, `region`, `postal-code`). These are structured,
+  not free-text, so they are reliable when present.
+- **latitude / longitude** — read from the map element's `data_latitude` /
+  `data_longitude` HTML attributes. These are the coordinates the site uses to
+  place the theater's map marker. Left blank when the attribute is absent or 0.
+- **status** — read from the map element's `data_status` attribute and normalized
+  to Open / Closed / Demolished / Renovating / Restoring. ("Showing Movies" is a
+  sub-state of Open and is normalized to Open.)
+- **screens / seats** — read from the structured stat links
+  (`/screens/N`, `/seats/N`) shown in the overview box.
+- **year_opened_guess / year_closed_guess** — Cinema Treasures does NOT expose
+  structured open/close-year fields. These columns are a BEST-EFFORT regex pull
+  from the free-text overview prose ("opened in 1927", "closed in 1986"). They are
+  LOW CONFIDENCE: the prose often mentions multiple years (renovations, reopenings,
+  name changes), so the captured year may be the wrong one. Treat as a hint to
+  verify, not as ground truth. Blank when no year pattern was found.
+
+## Borough assignment
+Primary: the city name on the detail page (e.g. "Springfield Gardens" -> Queens).
+Fallback: the listing the ID came from, used only when the detail-page city is
+missing or doesn't map to a known NYC borough. The `borough_source` column records
+which method was used (`detail_city` vs `listing`).
+
+## Data-quality flags column
+`data_quality_flags` is a semicolon-separated list flagging missing/low-confidence
+fields per row: `no_coords`, `no_seats`, `no_screens`, `no_street_address`,
+`no_year_opened`, `no_year_closed`, `no_borough`, `borough_from_listing_only`.
+
+## Known limitations / reliability caveats
+- **Crowdsourced source.** Seats, screens, addresses and especially years are
+  user-entered and unverified. Some are wrong, outdated, or blank.
+- **Years are unreliable** (see above) — they are extracted from prose, not fields.
+- **Status reflects the site's current label**, which may lag reality (a theater
+  marked Open may have since closed, etc.).
+- **"Demolished" vs "Closed"** is the contributor's judgment; not independently
+  verified.
+- We did not fabricate any value. Missing source data is left blank.
+- Coordinates are the site's marker position, occasionally approximate.
+
+## Year enrichment (AI pass)
+Because the raw regex-pulled years were demonstrably unreliable (e.g. the Roxy
+showed "closed 2022" when it was demolished in 1960; many had opened-after-closed),
+every theater's Cinema Treasures description was re-read and its years re-extracted
+by an AI model (Claude), one page at a time, with instructions to:
+- report the ORIGINAL opening year, not later renovations, reopenings, twinnings or
+  name changes;
+- report the year the theater CLOSED as a movie house (distinct from demolition);
+- attach a confidence rating (high / medium / low) and a short verbatim quote from
+  the page as evidence.
+
+Per-theater results live in `enrich/years_slice_*.json` as
+`{id, name, opened, closed, demolished, confidence, evidence}`. These AI-extracted
+years OVERRIDE the raw regex guesses in the final dataset. Where the source gave only
+a decade ("1950s"), the decade's first year is used and the row is marked lower
+confidence. Where no year is stated, the field is left blank — not invented.
+
+## Building the final dataset
+`build_data.py` merges the raw pull with the enriched years to produce
+`theaters.json`, applying these rules:
+- A theater is placed on the animated timeline only if it has a known opening year
+  AND (it is still open OR it has a known closing year). Theaters failing this test
+  are counted as "undated" and omitted from the animation rather than shown as
+  perpetually lit.
+- The light goes out in the year the theater CLOSED. Demolition year is used only as
+  a fallback when the closing year is unknown.
+- Impossible orderings (gone-before-opened) are dropped and flagged low confidence.
+
+## Final dataset summary (as built)
+- 1,210 theaters placed on the map (of 1,235 pulled; 25 lacked coordinates).
+- 1,036 have an opening year (86%); 891 have a closing year.
+- 898 are on the animated timeline; 312 are undated and omitted from it.
+- 124 are currently open (any status); 112 of those have a known opening year and
+  appear lit at 2026.
+- Shape of the story: the count and seat totals peak around 1940 (≈523 theaters,
+  ≈665,000 seats), then decline to ≈112 theaters and ≈106,000 seats today — roughly
+  an 84% loss of movie seats, with ≈786 theaters gone dark.
+
+These aggregate figures are only as reliable as a crowdsourced source allows; treat
+them as well-sourced estimates, not an official census. Individual year confidence is
+exposed in each theater's detail card.
+
+## Files
+- `cinema_treasures_raw.csv` / `.json` — raw pull, one row per theater.
+- `enrich/years_slice_*.json` — AI-extracted years with confidence + evidence quotes.
+- `theaters.json` — the merged dataset the website loads.
+- `../build_data.py` — the merge/cleaning script (re-runnable).
+- `METHODOLOGY.md` — this file.

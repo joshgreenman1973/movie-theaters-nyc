@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>When the lights went out — a century of New York City movie theaters</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="kicker">New York City &middot; movie theaters &middot; 1900&ndash;2026</div>
+      <h1 class="title">When the lights went out</h1>
+      <div class="sub">Every movie house New York could lose, lit on the map. Press play and watch a century of theaters open, glow and go dark &mdash; each fading to an ember where it once stood.</div>
+    </div>
+    <div class="ai-pop" id="aiPop">
+      <button class="ai-btn" id="aiBtn">AI caution &amp; sourcing</button>
+      <div class="ai-card">
+        <h4>How this was made &mdash; read before trusting a number</h4>
+        <ul>
+          <li>Theaters, locations, seat counts and statuses come from <a href="https://cinematreasures.org" target="_blank" rel="noopener">Cinema Treasures</a>, a crowdsourced, user-edited database. Some entries are incomplete or wrong.</li>
+          <li>Opening and closing <b>years were extracted by AI</b> from each theater's written description, with a confidence rating. Many are approximate; some are unknown and those theaters are left off the timeline (counted under &ldquo;undated&rdquo;).</li>
+          <li>Seat counts are user-entered and unverified, though the famous houses check out.</li>
+          <li>This is not a complete census of every theater that ever existed in the city &mdash; only what the source records.</li>
+          <li>See the <a href="data/METHODOLOGY.md" target="_blank">methodology</a> for full detail.</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="stage">
+    <aside class="rail live">
+      <h3><span>Now showing</span><span class="count" id="liveCount">0</span></h3>
+      <div class="railscroll" id="liveRail"></div>
+    </aside>
+
+    <div class="mapcol">
+      <div class="mapbox">
+        <div id="map"></div>
+        <div class="overlay-yr" id="yrOut">1900</div>
+        <div class="overlay-metric"><div class="big" id="metricOut">0</div><div class="lbl" id="metricLbl">seats lit</div></div>
+        <div class="tooltip" id="tip"></div>
+        <div class="detail" id="detail">
+          <span class="dx" id="detailX">&times;</span>
+          <div class="dn" id="detailName"></div>
+          <div class="dm" id="detailMeta"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="playbtn" id="play" aria-label="Play">&#9654;</button>
+        <input type="range" id="scrub" min="1900" max="2026" value="1900" step="1" />
+        <div class="seg" id="metricSeg">
+          <button data-m="seats" class="on">Seats</button>
+          <button data-m="screens">Screens</button>
+          <button data-m="count">Count</button>
+        </div>
+        <div class="speed">
+          <label for="speed">Speed</label>
+          <input type="range" id="speed" min="1" max="10" value="5" step="1" style="min-width:90px;flex:0 0 90px" />
+        </div>
+      </div>
+    </div>
+
+    <aside class="rail dead">
+      <h3><span>Gone dark</span><span class="count" id="deadCount">0</span></h3>
+      <div class="railscroll" id="deadRail"></div>
+    </aside>
+  </div>
+
+  <footer class="note" id="footnote">
+    Source: Cinema Treasures (extracted 2026). Opening/closing years AI-extracted from theater descriptions with confidence ratings; undated theaters are omitted from the animation. Basemap &copy; OpenStreetMap, &copy; CARTO.
+  </footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>

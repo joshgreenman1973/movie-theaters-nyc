@@ -1,0 +1,1847 @@
+[
+  {
+    "id": 56992,
+    "name": "48th Street Theatre",
+    "opened": "1912",
+    "closed": "1955",
+    "demolished": "1955",
+    "confidence": "high",
+    "evidence": "opened on August 11, 1912 ... demolished in late-1955"
+  },
+  {
+    "id": 4697,
+    "name": "777 Theatre",
+    "opened": "1971",
+    "closed": "1994",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opening in November 1971 ... the theatre closed in 1994"
+  },
+  {
+    "id": 21962,
+    "name": "Academy of Music",
+    "opened": "1854",
+    "closed": "1926",
+    "demolished": "1926",
+    "confidence": "high",
+    "evidence": "opening wih grand opera in 1854 ... until demolition in 1926"
+  },
+  {
+    "id": 53864,
+    "name": "Airdome Pictures",
+    "opened": "1911",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Opened in 1911, billed as the best appointed airdome in New York City."
+  },
+  {
+    "id": 11262,
+    "name": "AMC 34th Street 14",
+    "opened": "2001",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened on November 2, 2001 ... Open (Showing movies)"
+  },
+  {
+    "id": 26646,
+    "name": "AMC Orpheum 7",
+    "opened": "1991",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Loews Orpheum Theatre VII opened on November 22, 1991 ... Open (Showing movies)"
+  },
+  {
+    "id": 6573,
+    "name": "Angelika 57",
+    "opened": "1964",
+    "closed": "1997",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "built as a single screen art house in 1964 ... ceased operation as a theatre on July 10, 1997"
+  },
+  {
+    "id": 12307,
+    "name": "Apollo Theatre",
+    "opened": "1900",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Opened by 1900 as the Apollo Hall ... still operating in the 70's"
+  },
+  {
+    "id": 518,
+    "name": "Astor Theatre",
+    "opened": "1906",
+    "closed": "1972",
+    "demolished": "1982",
+    "confidence": "high",
+    "evidence": "opened on September 21, 1906 ... closed May 30, 1972 ... in 1982 ... razed"
+  },
+  {
+    "id": 11981,
+    "name": "Avon 42nd Street Theatre",
+    "opened": "unknown",
+    "closed": "1975",
+    "demolished": "2006",
+    "confidence": "medium",
+    "evidence": "After closing in 1975 ... It was demolished around 2006"
+  },
+  {
+    "id": 306,
+    "name": "Beekman Theatre",
+    "opened": "1952",
+    "closed": "2005",
+    "demolished": "2005",
+    "confidence": "high",
+    "evidence": "opened on April 28, 1952 ... closed on June23, 2005 ... demolished in November/December 2005"
+  },
+  {
+    "id": 6630,
+    "name": "Beverly Theatre",
+    "opened": "unknown",
+    "closed": "1956",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "closed around May 17, 1956 ... Torn down during the revitalization of the East Side"
+  },
+  {
+    "id": 2932,
+    "name": "Bijou Theatre",
+    "opened": "1917",
+    "closed": "1981",
+    "demolished": "1982",
+    "confidence": "high",
+    "evidence": "opened on April 12, 1917 ... closed in 1981 ... A year later ... razed"
+  },
+  {
+    "id": 6495,
+    "name": "Brandt's Murray Hill Theatre",
+    "opened": "1940",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Opened October 18, 1940 as the Airlines News Theatre ... By October 1955 ... converted"
+  },
+  {
+    "id": 23152,
+    "name": "Burlow Theater",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "A Wurltizer pipe organ ... was shipped to the Burlow Theater in 1912."
+  },
+  {
+    "id": 55800,
+    "name": "Casino Theatre",
+    "opened": "1914",
+    "closed": "1928",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Casino Theatre was opened around 1914 ... in 1928 ... in place of the theater came shops"
+  },
+  {
+    "id": 10760,
+    "name": "Chelsea Theatre",
+    "opened": "1903",
+    "closed": "unknown",
+    "demolished": "1959",
+    "confidence": "high",
+    "evidence": "Opened in 1903 ... It was demolished in September 1959."
+  },
+  {
+    "id": 6461,
+    "name": "Cinema 3",
+    "opened": "1977",
+    "closed": "1997",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on January 25, 1977 ... The Cinema 3 was closed on May 1, 1997"
+  },
+  {
+    "id": 16383,
+    "name": "Circle in the Square Theatre",
+    "opened": "1926",
+    "closed": "1950",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Listed in the Film Daily Yearbook;1926 edition ... Gone from listings in 1950"
+  },
+  {
+    "id": 14665,
+    "name": "Claremont Theatre",
+    "opened": "1914",
+    "closed": "1933",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened in 1914 ... It was converted to an automobile showroom by 1933."
+  },
+  {
+    "id": 7680,
+    "name": "Colon Theatre",
+    "opened": "1937",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Schuyler Theatre was opened in April 1937 ... still operating in the 1950 ... now a supermarket"
+  },
+  {
+    "id": 6937,
+    "name": "Costello Theatre",
+    "opened": "1914",
+    "closed": "1952",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Costello Theatre opened in 1914 ... still open in 1950, but had closed by 1952"
+  },
+  {
+    "id": 56988,
+    "name": "Daly's 63rd Street Theatre",
+    "opened": "1909",
+    "closed": "1941",
+    "demolished": "1957",
+    "confidence": "medium",
+    "evidence": "Construction began ... in 1909 ... never used again. It was demolished in 1957."
+  },
+  {
+    "id": 7049,
+    "name": "Directors Guild of America Theater",
+    "opened": "1951",
+    "closed": "1995",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Normandie Theatre was opened on December 6, 1951 ... closed by City Cinemas on May 4, 1995"
+  },
+  {
+    "id": 13893,
+    "name": "Eagle Theatre",
+    "opened": "unknown",
+    "closed": "1980",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Eagle Theatre was closed in the early-1980's ... listed in the 1926 Film Daily Year Book"
+  },
+  {
+    "id": 17728,
+    "name": "Ellwest Stereo Theater",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "evicted from its premises ... by March 28th, 1973 ... ruled favorably for the Ellwest"
+  },
+  {
+    "id": 7826,
+    "name": "Embassy 72nd Street Twin 1 and 2",
+    "opened": "1938",
+    "closed": "1988",
+    "demolished": "1989",
+    "confidence": "high",
+    "evidence": "The theatre first opened September 9, 1938 ... closed on August 28, 1988 ... demolished ... late-1980's"
+  },
+  {
+    "id": 36174,
+    "name": "Film at Lincoln Center",
+    "opened": "2011",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Elinor Bunin Munroe Film Center was opened June 17, 2011."
+  },
+  {
+    "id": 60227,
+    "name": "Florence Theatre",
+    "opened": "1909",
+    "closed": "1914",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "converted to motion pictures in March 1909 ... The last reference to the Florence Theatre was in 1914"
+  },
+  {
+    "id": 9809,
+    "name": "Gaiety Burlesk",
+    "opened": "unknown",
+    "closed": "2005",
+    "demolished": "2007",
+    "confidence": "medium",
+    "evidence": "operated from at least the mid-1970's until finally closing in March 2005, and was demolished in 2007"
+  },
+  {
+    "id": 4330,
+    "name": "Geo. M. Cohan Theatre",
+    "opened": "1911",
+    "closed": "1938",
+    "demolished": "1938",
+    "confidence": "high",
+    "evidence": "opened on February 13, 1911; demolished in 1938, along with the Fitzgerald Building"
+  },
+  {
+    "id": 6189,
+    "name": "Gracie Square Theatre",
+    "opened": "1927",
+    "closed": "1955",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Park Lane Theatre first opened on February 17, 1927; still open in 1952, but had closed by 1955"
+  },
+  {
+    "id": 14694,
+    "name": "Grange Theatre",
+    "opened": "1913",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "Built in 1913 at a cost of $40,000, the Grange appears to have been in operation until at least 1921"
+  },
+  {
+    "id": 17459,
+    "name": "Harem Theatre",
+    "opened": "1970",
+    "closed": "1995",
+    "demolished": "1997",
+    "confidence": "high",
+    "evidence": "opening on November 18, 1970; closed sometime in 1995-96; In 1997 the theatre and adjacent buildings were demolished"
+  },
+  {
+    "id": 29360,
+    "name": "Helen Hayes Theatre",
+    "opened": "1911",
+    "closed": "1978",
+    "demolished": "1982",
+    "confidence": "high",
+    "evidence": "The Folies-Bergere was opened on April 27, 1911; final production ran from September 28, 1978; all five theatres were demolished in 1982"
+  },
+  {
+    "id": 23977,
+    "name": "Hombre Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "possibly opened in the late-1970's as it's not listed in 1976 but is listed as operating in November 1980"
+  },
+  {
+    "id": 33333,
+    "name": "IndieHouse Cinema at the Producers Club",
+    "opened": "2010",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened July 16 (2010, comment dated July 30, 2010); status Open with 5 screens"
+  },
+  {
+    "id": 11141,
+    "name": "Jean Renoir Cinema",
+    "opened": "1977",
+    "closed": "1977",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "This small cinema was opened in March of 1977; cinema closed for good at the end of 1977"
+  },
+  {
+    "id": 66129,
+    "name": "Kings Cinema",
+    "opened": "unknown",
+    "closed": "1995",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "Back in 1993/1995 the 1st floor of this building was operated as the Kings Cinema, a gay adult movie theatre"
+  },
+  {
+    "id": 59896,
+    "name": "Lenox Garden Theatre",
+    "opened": "1914",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "It was an airdome which had opened by 1914; status Closed and Demolished"
+  },
+  {
+    "id": 25215,
+    "name": "Lighthouse Cinema",
+    "opened": "1996",
+    "closed": "1996",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opening in 1996 to closing a year later in 1997; closing in the fall of 1996"
+  },
+  {
+    "id": 6230,
+    "name": "Loew's 34th Street Showplace",
+    "opened": "unknown",
+    "closed": "1999",
+    "demolished": "1999",
+    "confidence": "high",
+    "evidence": "It was quietly shuttered on September 2, 1999 and then demolished."
+  },
+  {
+    "id": 31541,
+    "name": "Loew's 86th Street Theatre",
+    "opened": "1911",
+    "closed": "1963",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The 86th Street Theatre was opened by October 1911; still advertised in October 1963 but disappears shortly after"
+  },
+  {
+    "id": 529,
+    "name": "Loew's Delancey Theatre",
+    "opened": "1912",
+    "closed": "1976",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "It was built in 1911, opening in 1912; Loew's Delancey Theatre was closed around May 1976"
+  },
+  {
+    "id": 547,
+    "name": "Loew's Orpheum Twin Theatre",
+    "opened": "1913",
+    "closed": "1989",
+    "demolished": "1989",
+    "confidence": "high",
+    "evidence": "The 2,230-seat Loew's Orpheum Theatre opened on October 19, 1913; closed on November 23 1989 and was demolished"
+  },
+  {
+    "id": 12586,
+    "name": "Loew's Yorkville Theatre",
+    "opened": "1902",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Yorkville Theatre was built in 1902; It was closed in 1928."
+  },
+  {
+    "id": 13546,
+    "name": "Lucky Star Theatre",
+    "opened": "1920",
+    "closed": "1957",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "A motion picture theatre existed at this site from at least 1920; It operated through 1957."
+  },
+  {
+    "id": 13582,
+    "name": "Majestic Theatre",
+    "opened": "1914",
+    "closed": "1928",
+    "demolished": "2011",
+    "confidence": "high",
+    "evidence": "The Majestic Theater opened in 1914; exhibited motion pictures through 1928; demolished (2011 photo)"
+  },
+  {
+    "id": 32799,
+    "name": "Maysles Cinema at The Maysles Institute",
+    "opened": "2008",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened in 2008; current status Open (Showing movies)"
+  },
+  {
+    "id": 20160,
+    "name": "Metropolitan Theater",
+    "opened": "1910",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "The Metropolitan Theater was operating in 1910."
+  },
+  {
+    "id": 59895,
+    "name": "Moorish Garden Theatre",
+    "opened": "1913",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "opened by October 1913 and was also operating in 1914 (perhaps later?)"
+  },
+  {
+    "id": 40765,
+    "name": "Museum of Modern Art",
+    "opened": "1939",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "In 1939, the Museum of Modern Art moved into its first permanent home, where the Department of Film had its first auditorium"
+  },
+  {
+    "id": 12992,
+    "name": "New Cinema Playhouse",
+    "opened": "1959",
+    "closed": "1968",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "It opened as the 41st Street Theatre in 1959; last sign of operating was in July 1968"
+  },
+  {
+    "id": 7894,
+    "name": "New Plaza Cinema",
+    "opened": "1989",
+    "closed": "2020",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Cineplex Odeon opened this 300-seat single screen theatre on December 8, 1989; closed on January 13, 2020 when it was flooded"
+  },
+  {
+    "id": 3354,
+    "name": "New Yorker Theatre",
+    "opened": "1914",
+    "closed": "1985",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Originally opened as the 955-seat Adelphi Theatre by 1914; closed on May 16, 1985"
+  },
+  {
+    "id": 60226,
+    "name": "Novelty Theatre",
+    "opened": "1909",
+    "closed": "1930",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Novelty Theatre was certainly open by 1909. It was still open in 1929, but had closed by 1930."
+  },
+  {
+    "id": 8363,
+    "name": "Pagoda Theater",
+    "opened": "1964",
+    "closed": "1992",
+    "demolished": "1992",
+    "confidence": "high",
+    "evidence": "it opened in 1964; Demolished in 1992, the site is now home to the Glory China Tower office building"
+  },
+  {
+    "id": 13292,
+    "name": "Paraiso Theater",
+    "opened": "1914",
+    "closed": "1957",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "It was open as the New Madison Theater by 1914; No listing in the 1957 Film Daily Yearbook"
+  },
+  {
+    "id": 6493,
+    "name": "Park Avenue Theatre",
+    "opened": "1946",
+    "closed": "1952",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "the Park Avenue Theatre opened in October 1946; It was closed in 1952."
+  },
+  {
+    "id": 1386,
+    "name": "People's Theatre",
+    "opened": "unknown",
+    "closed": "1941",
+    "demolished": "1945",
+    "confidence": "medium",
+    "evidence": "By 1930 it was a movie theatre and was still operating in 1941. It was demolished in 1945."
+  },
+  {
+    "id": 11831,
+    "name": "Players Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "A 1965 ad proclaimed this 'New York's Premiere Avant Garde and Experimental Film Showcase'"
+  },
+  {
+    "id": 31847,
+    "name": "Prince Theatre",
+    "opened": "unknown",
+    "closed": "1995",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "operated at least from 1990 to 1995, and maybe longer"
+  },
+  {
+    "id": 14739,
+    "name": "Rainbow Theatre",
+    "opened": "1915",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "in operation here at least as early as 1915 and as late as 1928"
+  },
+  {
+    "id": 10478,
+    "name": "Regal Union Square",
+    "opened": "1998",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened its doors for business on November 13, 1998 with 3,500-seats in 14 screens"
+  },
+  {
+    "id": 21751,
+    "name": "Rendezvous Cinema",
+    "opened": "1978",
+    "closed": "unknown",
+    "demolished": "1987",
+    "confidence": "medium",
+    "evidence": "The cinema opened in 1978 ... demolished in 1987"
+  },
+  {
+    "id": 3353,
+    "name": "Riviera Theatre",
+    "opened": "1913",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Built in 1913 for William Fox by Thomas Lamb ... have long since been demolished"
+  },
+  {
+    "id": 3899,
+    "name": "RKO Alhambra Theatre",
+    "opened": "1905",
+    "closed": "1964",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "the Alhambra Theatre was opened on May 15, 1905 ... closed in November 1964"
+  },
+  {
+    "id": 14769,
+    "name": "RKO Proctor's Twenty-Third Street Theatre",
+    "opened": "1889",
+    "closed": "1937",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "presented 'A County Fair' on March 6, 1889 ... fire forced its closure in March 1937"
+  },
+  {
+    "id": 10372,
+    "name": "Rosemary Theater",
+    "opened": "1982",
+    "closed": "1996",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened in May 1982 ... It was closed in 1996"
+  },
+  {
+    "id": 9680,
+    "name": "Royal Theatre",
+    "opened": "1918",
+    "closed": "1950",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "Opened in 1918 ... had closed by 1950"
+  },
+  {
+    "id": 31754,
+    "name": "Schuyler Theatre",
+    "opened": "1914",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "this one operated from at least 1914 to 1928"
+  },
+  {
+    "id": 15018,
+    "name": "Stadium Theatre",
+    "opened": "1921",
+    "closed": "1944",
+    "demolished": "2000s",
+    "confidence": "high",
+    "evidence": "The Stadium Theatre opened in 1921 ... Closed in 1944 ... demolished in the 2000's"
+  },
+  {
+    "id": 21234,
+    "name": "Sunset Theater",
+    "opened": "1926",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "listed as operating from at least 1926 ... continued until at least 1967"
+  },
+  {
+    "id": 2097,
+    "name": "S.V.A. Theatre",
+    "opened": "1963",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened as the RKO 23rd Street Cinema on February 13, 1963 ... Open (Showing movies)"
+  },
+  {
+    "id": 4698,
+    "name": "Theatre 80 St. Marks",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "one of the city's oldest revival theatres (former speakeasy Scheib's Place)"
+  },
+  {
+    "id": 1078,
+    "name": "Todd Haimes Theatre",
+    "opened": "1918",
+    "closed": "1997",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "the Selwyn Theatre opened on October 2, 1918 ... until closing on December 31, 1997"
+  },
+  {
+    "id": 7060,
+    "name": "Trans-Lux 85th Street Theatre",
+    "opened": "1937",
+    "closed": "1985",
+    "demolished": "1990s",
+    "confidence": "medium",
+    "evidence": "opened on November 1, 1937 ... Closed in the mid-1980's it was demolished in the 1990's"
+  },
+  {
+    "id": 10711,
+    "name": "Tudor Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "1954",
+    "confidence": "medium",
+    "evidence": "The Tudor Theatre was demolished in 1954"
+  },
+  {
+    "id": 288,
+    "name": "Variety Theatre",
+    "opened": "unknown",
+    "closed": "2004",
+    "demolished": "2005",
+    "confidence": "medium",
+    "evidence": "In October of 2004 ... closed the theatre ... in June of 2005, the theatre was torn down"
+  },
+  {
+    "id": 290,
+    "name": "Village East by Angelika",
+    "opened": "1926",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opening on November 17, 1926 as the Louis M. Jaffe Art Theatre ... reopened as the Village East Cinema"
+  },
+  {
+    "id": 8915,
+    "name": "Warners' Theatre",
+    "opened": "1924",
+    "closed": "1948",
+    "demolished": "1952",
+    "confidence": "high",
+    "evidence": "Opened as the Piccadilly Theatre on September 27, 1924 ... closed in either 1948 or 1949 ... demolished in 1952"
+  },
+  {
+    "id": 13551,
+    "name": "Windsor Theatre",
+    "opened": "unknown",
+    "closed": "1953",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "exhibited motion pictures prior to 1914 until at least 1953"
+  },
+  {
+    "id": 2251,
+    "name": "Ziegfeld Theatre",
+    "opened": "1927",
+    "closed": "1944",
+    "demolished": "1966",
+    "confidence": "high",
+    "evidence": "opened February 2, 1927 ... last movies in August 1944 ... demolished in 1966"
+  },
+  {
+    "id": 2553,
+    "name": "Albemarle Theatre",
+    "opened": "1921",
+    "closed": "1984",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened as the Albemarle Theatre on March 17, 1921 ... In late-1984 ... closed its doors due to a fire"
+  },
+  {
+    "id": 6844,
+    "name": "Ambassador Theatre",
+    "opened": "1926",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "the Ambassador Theatre first opened in 1926 ... by the very early 70's it was closed"
+  },
+  {
+    "id": 36291,
+    "name": "Art Theater",
+    "opened": "1911",
+    "closed": "1932",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Atlantic Theatre was operating by 1911 ... it was closed by 1932"
+  },
+  {
+    "id": 588,
+    "name": "Avalon Theatre",
+    "opened": "1928",
+    "closed": "1982",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on January 25, 1928 ... The Avalon Theatre was closed in 1982"
+  },
+  {
+    "id": 73161,
+    "name": "BAM Rose Cinemas at BAM KBH",
+    "opened": "unknown",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "On November 7, 2025 two more screens were added at BAM-KBH across the street"
+  },
+  {
+    "id": 36293,
+    "name": "Beverley Theatre",
+    "opened": "1912",
+    "closed": "1915",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "operating by 1912, and closing in 1915"
+  },
+  {
+    "id": 12328,
+    "name": "Brooklyn Heights Cinema I & II",
+    "opened": "1971",
+    "closed": "2014",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "granted a Certificate of Occupancy on June 9, 1971 ... It was closed August 27, 2014"
+  },
+  {
+    "id": 36265,
+    "name": "Cameraphone",
+    "opened": "1908",
+    "closed": "1909",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Cameraphone was an early store front nickelodeon, which was operating in 1908 and 1909."
+  },
+  {
+    "id": 6900,
+    "name": "Casino Theatre",
+    "opened": "1911",
+    "closed": "1947",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on December 18, 1911; closed in August 1947"
+  },
+  {
+    "id": 8279,
+    "name": "Century Theatre",
+    "opened": "1910",
+    "closed": "1940",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "first opened as the Sam S. Shubert Theatre on October 17, 1910; shuttered in the early-1940's"
+  },
+  {
+    "id": 42278,
+    "name": "Clarendon Theatre",
+    "opened": "1914",
+    "closed": "1917",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Clarendon Theatre was opened by 1914. It was closed in 1917"
+  },
+  {
+    "id": 4036,
+    "name": "Coliseum Theatre",
+    "opened": "1922",
+    "closed": "1990",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Coliseum Theatre opened in February 1922; It was closed in 1990."
+  },
+  {
+    "id": 8738,
+    "name": "Comet Theatre",
+    "opened": "1910",
+    "closed": "1955",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Gates Avenue Park Theatre was opened January 22, 1910; closed in 1955"
+  },
+  {
+    "id": 41513,
+    "name": "Covert Theatre",
+    "opened": "1913",
+    "closed": "1918",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened by Robert Fink in 1913. In 1914 it was named Covert Theatre and was closed in 1918."
+  },
+  {
+    "id": 50054,
+    "name": "Crystal Theatre",
+    "opened": "1909",
+    "closed": "1913",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "built and opened in 1909...closed by the end of 1913."
+  },
+  {
+    "id": 19040,
+    "name": "Ditmas Theater",
+    "opened": "unknown",
+    "closed": "1920",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "listed in the 1914-1915 edition of American Motion Picture Directory. Closed in 1920."
+  },
+  {
+    "id": 8167,
+    "name": "Echo Theatre",
+    "opened": "1921",
+    "closed": "1941",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "It was opened in 1921. It was closed in 1941."
+  },
+  {
+    "id": 41501,
+    "name": "Empire Theatre",
+    "opened": "1907",
+    "closed": "1920",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Empire Moving Picture Theatre was opened in 1907...and operated until 1920."
+  },
+  {
+    "id": 50191,
+    "name": "Family Theatre",
+    "opened": "1914",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Family Theatre was operating in 1914. In 2015 a laundromat operates from the site."
+  },
+  {
+    "id": 5874,
+    "name": "Flatbush Theatre",
+    "opened": "1914",
+    "closed": "1952",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "construction of Flatbush Theater in 1914; the theatre closed in 1952"
+  },
+  {
+    "id": 11234,
+    "name": "Garden Theater",
+    "opened": "1906",
+    "closed": "1929",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened around 1906; listed in 1929 which appears to be its final year of operation."
+  },
+  {
+    "id": 10653,
+    "name": "Gem Theatre",
+    "opened": "1914",
+    "closed": "1954",
+    "demolished": "1955",
+    "confidence": "high",
+    "evidence": "opened in 1914...closed in 1954, and demolished in 1955."
+  },
+  {
+    "id": 30517,
+    "name": "G & M Theatre",
+    "opened": "1914",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "listed in the 1914-1915 edition of American Motion Picture Directory; probably did not survive beyond the silent era"
+  },
+  {
+    "id": 3924,
+    "name": "Granada Theatre",
+    "opened": "1921",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Airdome was opened at this address in 1921"
+  },
+  {
+    "id": 8034,
+    "name": "Grove Theater",
+    "opened": "1912",
+    "closed": "1951",
+    "demolished": "1980",
+    "confidence": "high",
+    "evidence": "It opened in 1912 as the Jefferson Casino Theater; closed in 1951; a 1980 demolition date"
+  },
+  {
+    "id": 42098,
+    "name": "Heart of Ridgewood Theatre",
+    "opened": "1910",
+    "closed": "1913",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "list of motion picture theatres...September 3, 1910 edition of Billboard; Operating until 1913"
+  },
+  {
+    "id": 50168,
+    "name": "Huntington Theatre",
+    "opened": "1912",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Universal Theatre was opened in 1912. By 1915 renamed Huntington Theatre. Closed in 1928."
+  },
+  {
+    "id": 7528,
+    "name": "Irving Theatre",
+    "opened": "1914",
+    "closed": "1942",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on April 11, 1914; it closed in 1942 when all German language prints were confiscated"
+  },
+  {
+    "id": 42229,
+    "name": "Kensington Theatre",
+    "opened": "1912",
+    "closed": "1913",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "a short-lived early movie theatre, operating in 1912 and 1913."
+  },
+  {
+    "id": 50116,
+    "name": "Kingston Theatre",
+    "opened": "1912",
+    "closed": "1921",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Kingston Theatre was opened in 1912 by Costas Stamis. It was closed in 1921."
+  },
+  {
+    "id": 3885,
+    "name": "Leader Theatre",
+    "opened": "1927",
+    "closed": "1960",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Leader Theatre was opened in 1927. It closed in 1960 and became Leader Lanes bowling alley"
+  },
+  {
+    "id": 6322,
+    "name": "Linden Theatre",
+    "opened": "1915",
+    "closed": "1961",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened in September 1915 as the Century Theatre; closed with 'The Parent Trap' in 1961"
+  },
+  {
+    "id": 15323,
+    "name": "Loew's Bijou Theatre",
+    "opened": "1893",
+    "closed": "1929",
+    "demolished": "1930",
+    "confidence": "high",
+    "evidence": "The Bijou Theatre opened November 13, 1893; operated until 1929; demolished in 1930"
+  },
+  {
+    "id": 4149,
+    "name": "Loew's Melba Theatre",
+    "opened": "1915",
+    "closed": "1954",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Keeney's Theatre was opened in 1915; A very early casualty of television, closing in 1954."
+  },
+  {
+    "id": 11139,
+    "name": "Luna Theater",
+    "opened": "1914",
+    "closed": "1952",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "opened in 1914 as the Auditore Maurice Theater; This theater closed in 1952; demolished in the late-2000's"
+  },
+  {
+    "id": 21858,
+    "name": "Marathon Theater",
+    "opened": "1908",
+    "closed": "1928",
+    "demolished": "1928",
+    "confidence": "high",
+    "evidence": "The Marathon Theater first opened in 1908; torn down in 1928 and the much larger Sanders Theatre was built on the site."
+  },
+  {
+    "id": 7430,
+    "name": "Marine Theatre",
+    "opened": "1926",
+    "closed": "1972",
+    "demolished": "1972",
+    "confidence": "high",
+    "evidence": "opened on November 18 1926; closed in 1972 and the auditorium was demolished."
+  },
+  {
+    "id": 4147,
+    "name": "Metro Theatre",
+    "opened": "1922",
+    "closed": "1953",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Parkway Theatre opened in early-1922; It was closed in 1953"
+  },
+  {
+    "id": 21467,
+    "name": "Miller Theater",
+    "opened": "1916",
+    "closed": "1926",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Miller Theater opened around 1916. It is no longer listed after 1926."
+  },
+  {
+    "id": 7882,
+    "name": "Monroe Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "The Monroe Theatre was operating prior to 1926; has since been demolished"
+  },
+  {
+    "id": 30753,
+    "name": "New Albany Theatre",
+    "opened": "1914",
+    "closed": "1930",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "listed in the 1914/1915 edition; has gone from listings by 1930"
+  },
+  {
+    "id": 34694,
+    "name": "New Linden Theatre",
+    "opened": "1916",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "operated as the Linden Garden Airdrome from 1916; re-named the New Linden Theatre in 1922"
+  },
+  {
+    "id": 4000,
+    "name": "New Venus Theater",
+    "opened": "unknown",
+    "closed": "1954",
+    "demolished": "2008",
+    "confidence": "high",
+    "evidence": "Closed in 1954...until it was demolished in May 2008."
+  },
+  {
+    "id": 40047,
+    "name": "Nostrand Theatre",
+    "opened": "1910",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened in 1910; closed as a silent movie theatre in 1928"
+  },
+  {
+    "id": 36292,
+    "name": "Osiris Theatre",
+    "opened": "1913",
+    "closed": "1915",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "operating by 1913, and closed in 1915"
+  },
+  {
+    "id": 9310,
+    "name": "Paragon Theatre",
+    "opened": "1914",
+    "closed": "1934",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "opened in 1914 as the Leroy Theatre; finally closed in 1934."
+  },
+  {
+    "id": 42281,
+    "name": "Park Theatre",
+    "opened": "1908",
+    "closed": "1915",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Park Theatre was open by 1908, and was closed in 1915."
+  },
+  {
+    "id": 7090,
+    "name": "Peerless Theater",
+    "opened": "1914",
+    "closed": "1965",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Peerless Theater was opened in 1914; The Peerless Theatre was closed in 1965"
+  },
+  {
+    "id": 41563,
+    "name": "Pitkin Market Theatre",
+    "opened": "1911",
+    "closed": "1918",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "operating from 1911; It was closed in 1918, becoming part of the market."
+  },
+  {
+    "id": 50157,
+    "name": "Prospect Palace",
+    "opened": "1909",
+    "closed": "1915",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Prospect Palace was opened in 1909...It was closed in 1915."
+  },
+  {
+    "id": 17037,
+    "name": "Regal UA Court Street Stadium 12",
+    "opened": "2000",
+    "closed": "2022",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "It opened on July 14, 2000; It was closed on January 16, 2022"
+  },
+  {
+    "id": 44817,
+    "name": "Review Theatre",
+    "opened": "1922",
+    "closed": "1928",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened in early-1922. It was closed in 1928, and was converted into a public market."
+  },
+  {
+    "id": 7087,
+    "name": "Rivoli Theatre",
+    "opened": "1910",
+    "closed": "1963",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Myrtle Theatre was opened on November 16, 1910; re-named Rivoli Theatre and was closed in 1963."
+  },
+  {
+    "id": 1390,
+    "name": "RKO Prospect Theatre",
+    "opened": "1914",
+    "closed": "1967",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "the 2,448-seat Prospect Theatre opened on September 7, 1914; Closed as a movie theatre in 1967"
+  },
+  {
+    "id": 3922,
+    "name": "Rugby Theatre",
+    "opened": "1926",
+    "closed": "1986",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "It opened in 1926; before closing in 1986. It now houses stores."
+  },
+  {
+    "id": 10995,
+    "name": "Select Theater",
+    "opened": "1914",
+    "closed": "1928",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "the Chester Theatre opened in 1914...re-opened as the Select Theatre, and finally closed in 1928."
+  },
+  {
+    "id": 595,
+    "name": "Shore Theatre",
+    "opened": "1925",
+    "closed": "1973",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened on June 17, 1925; possibly closed around March 1973."
+  },
+  {
+    "id": 8018,
+    "name": "Starr Theater",
+    "opened": "1926",
+    "closed": "1968",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Starr Theater was opened on June 26, 1926; it was closed in 1968."
+  },
+  {
+    "id": 8425,
+    "name": "Stone Theatre",
+    "opened": "1920",
+    "closed": "1966",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "the Stone Theatre was opened in 1920; It was closed in 1966"
+  },
+  {
+    "id": 4084,
+    "name": "Sunset Theater",
+    "opened": "1908",
+    "closed": "1950",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "Operating as the Vaudeau Theater in 1908...It was closed on July 2, 1950"
+  },
+  {
+    "id": 3870,
+    "name": "Terminal Theatre",
+    "opened": "1926",
+    "closed": "1969",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "opened by the Small-Strausberg Circuit by 1926; before closing in the 1960s"
+  },
+  {
+    "id": 3977,
+    "name": "Tivoli Theatre",
+    "opened": "1927",
+    "closed": "1952",
+    "demolished": "1954",
+    "confidence": "high",
+    "evidence": "The Tivoli Theatre opened on February 8, 1927; closed in 1952...subsequently demolished."
+  },
+  {
+    "id": 3951,
+    "name": "Triangle Theatre",
+    "opened": "1919",
+    "closed": "1952",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "On April 22, 1919...build a theater; Closed on June 29, 1952, the building became a furniture store"
+  },
+  {
+    "id": 15327,
+    "name": "Utica Theater",
+    "opened": "1920",
+    "closed": "1954",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Utica Theater opened on February 12, 1920; it closed in 1954"
+  },
+  {
+    "id": 3927,
+    "name": "Wagner Theater",
+    "opened": "1921",
+    "closed": "1979",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Opened on June 18, 1921 as the Reo Theatre; finally closing in 1979"
+  },
+  {
+    "id": 3979,
+    "name": "Werba's Brooklyn Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "It was razed to make way for an office building; specific years not provided"
+  },
+  {
+    "id": 4080,
+    "name": "Windsor Theater",
+    "opened": "1928",
+    "closed": "1959",
+    "demolished": "1982",
+    "confidence": "high",
+    "evidence": "the Windsor Theatre...opened in 1928. The Windsor Theatre was closed in 1959; in 1982 an apartment block was built"
+  },
+  {
+    "id": 12443,
+    "name": "Allerton Theatre",
+    "opened": "1927",
+    "closed": "1993",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Opened in 1927, the Allerton Theatre... continued in operation until 1993"
+  },
+  {
+    "id": 7989,
+    "name": "Ascot Theatre",
+    "opened": "1935",
+    "closed": "1990s",
+    "demolished": "2016",
+    "confidence": "high",
+    "evidence": "The Ascot Theatre opened in 1935... demolished in February 2016"
+  },
+  {
+    "id": 6099,
+    "name": "Bedford Theatre",
+    "opened": "1923",
+    "closed": "1955",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "opened in 1923... still opened in 1952, but had closed by 1955"
+  },
+  {
+    "id": 7527,
+    "name": "Brandt's Victory Theatre",
+    "opened": "1910",
+    "closed": "1959",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "first opened in 1910... I recall attending this theater through 1959"
+  },
+  {
+    "id": 8048,
+    "name": "Carver Theatre",
+    "opened": "1914",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "Opened as the Crescent Theatre in 1914 on Boston Road near Home Street"
+  },
+  {
+    "id": 11878,
+    "name": "City Island Theatre",
+    "opened": "1926",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Raymond Theatre was opened by 1926 and was still operating in 1957"
+  },
+  {
+    "id": 6714,
+    "name": "Crotona Theatre",
+    "opened": "1912",
+    "closed": "1959",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Crotona Theatre first opened in 1912... operated the theatre until closure in 1959"
+  },
+  {
+    "id": 7983,
+    "name": "Dover Theatre",
+    "opened": "1930",
+    "closed": "1989",
+    "demolished": "2025",
+    "confidence": "medium",
+    "evidence": "opened around 1930... closed in December 1989... demolished in November 2025"
+  },
+  {
+    "id": 8000,
+    "name": "Garden Theatre",
+    "opened": "1914",
+    "closed": "1926",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Garden Theatre opened in 1914... It had closed as a movie house by 1926"
+  },
+  {
+    "id": 8347,
+    "name": "Jackson Theatre",
+    "opened": "1919",
+    "closed": "1957",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Originally opened in 1919 as the Coleman Theatre... still open in 1957"
+  },
+  {
+    "id": 8091,
+    "name": "Laconia Theatre",
+    "opened": "1926",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Lanconia Theatre was opened in 1926... converted into a church"
+  },
+  {
+    "id": 12447,
+    "name": "Loew's Metropolis Theatre",
+    "opened": "1897",
+    "closed": "1926",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened as a legit live theatre on August 30, 1897... not listed in the 1926 Film Daily Yearbook"
+  },
+  {
+    "id": 20043,
+    "name": "McLean's Theatre",
+    "opened": "1905",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "a tiny silent movie house... opened in 1905"
+  },
+  {
+    "id": 20040,
+    "name": "Nicoland Theatre",
+    "opened": "1908",
+    "closed": "1917",
+    "demolished": "1970s",
+    "confidence": "high",
+    "evidence": "Nicoland Theatre opened later that [1908]... closed as a movie house in 1917... early-1970's"
+  },
+  {
+    "id": 6025,
+    "name": "Park Plaza Theatre",
+    "opened": "1927",
+    "closed": "1966",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Opened in 1927, the Park Plaza Theatre... closed it in 1966"
+  },
+  {
+    "id": 6094,
+    "name": "President Theatre",
+    "opened": "1929",
+    "closed": "1979",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "This theatre opened by 1929 as the Arcadia Theatre... The President Theatre was closed in 1979."
+  },
+  {
+    "id": 7022,
+    "name": "RKO Chester Theatre",
+    "opened": "1927",
+    "closed": "1968",
+    "demolished": "2010",
+    "confidence": "high",
+    "evidence": "Chester Theatre first opened in December, 1927... closed in 1968... demolished in May 2010"
+  },
+  {
+    "id": 8093,
+    "name": "Rosedale Theatre",
+    "opened": "1926",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "opened in late-1926... 1927 edition of Film Daily Weekly lists the Rosedale Theatre"
+  },
+  {
+    "id": 7995,
+    "name": "Surrey Theatre",
+    "opened": "1935",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "opened in 1935 on Mt. Eden Avenue... today serves as a church"
+  },
+  {
+    "id": 7880,
+    "name": "Vogue Theatre",
+    "opened": "1928",
+    "closed": "1950s",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Daly Theatre opened in 1928... remained until the 1950's"
+  },
+  {
+    "id": 18380,
+    "name": "Whitestone Multiplex Cinemas",
+    "opened": "1983",
+    "closed": "2013",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on October 28, 1983... It was closed in June 2013."
+  },
+  {
+    "id": 66036,
+    "name": "Apollo Theatre",
+    "opened": "1911",
+    "closed": "1914",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Apollo Theatre was opened in 1911. It was closed in 1914"
+  },
+  {
+    "id": 3412,
+    "name": "Empire Theater",
+    "opened": "1916",
+    "closed": "1978",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Empire Theater was built in 1916 and closed in 1978."
+  },
+  {
+    "id": 6272,
+    "name": "Island Theatre",
+    "opened": "1966",
+    "closed": "1987",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened by Fabian Theatres on June 29, 1966... closed on August 13, 1987"
+  },
+  {
+    "id": 29552,
+    "name": "Music Hall",
+    "opened": "1892",
+    "closed": "1965",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "Music Hall opened in 1892... switched to talkies in 1933, weekly until 1965"
+  },
+  {
+    "id": 59975,
+    "name": "Regal Bricktown Charleston",
+    "opened": "2019",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened on May 17, 2019... Still operating"
+  },
+  {
+    "id": 3383,
+    "name": "Stadium Theatre",
+    "opened": "1927",
+    "closed": "1957",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Stadium Theatre opened in 1927... had closed as a movie theatre by 1957"
+  },
+  {
+    "id": 27036,
+    "name": "Strand Theatre",
+    "opened": "unknown",
+    "closed": "1930",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "listed in the 1930 edition of Film Daily Yearbook as (Closed)"
+  },
+  {
+    "id": 6633,
+    "name": "Cameo Theatre",
+    "opened": "1941",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "first opened in 1941... gutted around the late 80's / early 90's"
+  },
+  {
+    "id": 8731,
+    "name": "Regal UA Kaufman Astoria",
+    "opened": "1999",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "originally called the Regal Kaufman Astoria Stadium 14 when it opened on October 8, 1999"
+  },
+  {
+    "id": 4029,
+    "name": "Bombay Theatre",
+    "opened": "1940",
+    "closed": "2024",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened in September 1940; had closed by January 2024 and converted into a church"
+  },
+  {
+    "id": 17563,
+    "name": "Ritz Theatre",
+    "opened": "1910",
+    "closed": "1927",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "The Murray Hill Theatre was opened in May 1910; the Ritz Theatre closed permanently in 1927"
+  },
+  {
+    "id": 6155,
+    "name": "Jamaica Multiplex Cinemas",
+    "opened": "2002",
+    "closed": "2024",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened on May 17, 2002; closed on April 30, 2024"
+  },
+  {
+    "id": 6529,
+    "name": "Savoy Theatre",
+    "opened": "1920",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Rialto Theatre was opened December 1, 1920; later was closed and eventually demolished"
+  },
+  {
+    "id": 4615,
+    "name": "Cinemart Cinemas",
+    "opened": "1927",
+    "closed": "still_open",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "Opened as the Metropolis Theatre on March 10, 1927; later reopened as Cinemart and remains operational"
+  },
+  {
+    "id": 6500,
+    "name": "Newtown Theatre",
+    "opened": "1916",
+    "closed": "1950",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "originally known as the Victoria Theatre and first opened in 1916; remained a late-run house until closure in the early-1950's"
+  },
+  {
+    "id": 7099,
+    "name": "Palace Theatre",
+    "opened": "1920",
+    "closed": "1950s",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Palace Theatre dates back to the early-1920's; closed in the 1950's and now serves as Mt. Gerizim Holy Church"
+  },
+  {
+    "id": 6431,
+    "name": "Hobart Theatre",
+    "opened": "1936",
+    "closed": "1963",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "opened on October 31, 1936; Closed in 1963/1964, the building was converted into a A&P store"
+  },
+  {
+    "id": 4732,
+    "name": "Loew's Bay Terrace",
+    "opened": "1964",
+    "closed": "1993",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened by Fabian Theatres on April 8, 1964; closed on November 18, 1993"
+  },
+  {
+    "id": 7897,
+    "name": "Grandview Theater",
+    "opened": "1912",
+    "closed": "1950",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "dating back to at least April 1912; Closed late-1940's to early-1950's and converted to a funeral home"
+  },
+  {
+    "id": 4624,
+    "name": "Oasis Theatre",
+    "opened": "1927",
+    "closed": "1978",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened on September 16, 1927 by Sol Brill; closed on April 30, 1978"
+  },
+  {
+    "id": 4021,
+    "name": "Ridgewood Theatre",
+    "opened": "1916",
+    "closed": "2008",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "It first opened on December 23, 1916; in early-March 2008 the Ridgewood Theatre was suddenly closed"
+  },
+  {
+    "id": 6201,
+    "name": "43rd Street Theatre",
+    "opened": "1938",
+    "closed": "1950",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The 43rd Street Theatre first opened in 1938 and survived until around 1950"
+  },
+  {
+    "id": 4686,
+    "name": "Lefferts Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "opened prior to 1926 when it was operated by the Meyer & Schneider circuit; later turned into retail stores"
+  },
+  {
+    "id": 3973,
+    "name": "RKO Strand Theatre",
+    "opened": "1919",
+    "closed": "1970s",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "The Strand Theatre opened on October 23, 1919; After it closed in the 1970's"
+  },
+  {
+    "id": 11173,
+    "name": "Chelita Movie House",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "A neighborhood house in Ozone Park, Queens, that is now closed"
+  },
+  {
+    "id": 4659,
+    "name": "Maspeth Theatre",
+    "opened": "1924",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "It opened in 1924. I dont know when it closed but the marquee was still up way into the 1970's"
+  },
+  {
+    "id": 44158,
+    "name": "Regent Theatre",
+    "opened": "1914",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "medium",
+    "evidence": "The Regent Theatre opened in 1914; listed in the 1932 Film Daily Yearbook as closed"
+  },
+  {
+    "id": 16769,
+    "name": "Jackson Heights Airdrome",
+    "opened": "1919",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "the first motion picture theater in Jackson Heights; opening year is given as 1919"
+  },
+  {
+    "id": 4626,
+    "name": "Acme Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "na",
+    "confidence": "low",
+    "evidence": "The Ozone Theatre was listed in 1926 as part of the Meyer & Schneider circuit; A church currently is housed in the former theatre"
+  },
+  {
+    "id": 8647,
+    "name": "New Ozone Theatre",
+    "opened": "unknown",
+    "closed": "unknown",
+    "demolished": "unknown",
+    "confidence": "low",
+    "evidence": "A neighborhood house in Ozone Park, Queens, that is now closed"
+  },
+  {
+    "id": 7436,
+    "name": "Bellaire Theatre",
+    "opened": "1926",
+    "closed": "1950s",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "opened in August 1926 by Playhouse Operating Co.; it closed in the late-1950's; converted into a bowling alley"
+  },
+  {
+    "id": 8285,
+    "name": "Cambria Theater",
+    "opened": "unknown",
+    "closed": "1975",
+    "demolished": "unknown",
+    "confidence": "medium",
+    "evidence": "converted into a church on Easter Sunday 1975; Cambria came into their possession on Easter Sunday, 1975"
+  },
+  {
+    "id": 8287,
+    "name": "Boardwalk Theatre",
+    "opened": "1931",
+    "closed": "1952",
+    "demolished": "unknown",
+    "confidence": "high",
+    "evidence": "It was listed as the June Theatre in 1931 with 550 seats; had closed by 1952"
+  },
+  {
+    "id": 7752,
+    "name": "Plaza Theatre",
+    "opened": "unknown",
+    "closed": "1961",
+    "demolished": "na",
+    "confidence": "high",
+    "evidence": "The Plaza Theatre was opened prior to 1926; It was closed in 1961"
+  }
+]

@@ -1,0 +1,5 @@
+.claude/
+__pycache__/
+*.pyc
+data/enrich/slice_*.csv
+.DS_Store
